@@ -1,0 +1,211 @@
+/*=========================================
+RESPONSIVE CSS
+=========================================*/
+
+
+/*=========================================
+XL & BELOW (1199.98px)
+=========================================*/
+
+@media (max-width:1199.98px){
+
+    /* Header */
+
+    #header{
+        top:0;
+    }
+
+    .navbar{
+        padding:10px 0;
+    }
+
+    .navbar>.container{
+        top:0;
+        padding:12px 18px;
+        border-radius:16px;
+    }
+
+    .logo{
+        height:48px;
+    }
+
+    /* Collapse */
+
+    .navbar-collapse{
+        margin-top:15px;
+        padding:20px;
+        border-radius:16px;
+        background:#fff;
+        box-shadow:0 15px 40px rgba(0,0,0,.15);
+    }
+
+    .navbar-nav{
+        gap:0;
+    }
+
+    .nav-link{
+        padding:14px 0 !important;
+        font-size:16px;
+    }
+
+    .nav-link::before{
+        display:none;
+    }
+
+    /* Dropdown */
+
+    .dropdown-menu{
+        position:static !important;
+        display:none;
+        opacity:1 !important;
+        visibility:visible !important;
+        transform:none !important;
+        float:none;
+        width:100%;
+        margin-top:8px;
+        background:#260202;
+        border:none;
+        border-radius:10px;
+        box-shadow:none;
+        padding:10px 0;
+    }
+
+    .dropdown-menu.show{
+        display:block;
+    }
+
+    .dropdown-item{
+        color:#fff;
+        padding:12px 20px;
+    }
+
+    .dropdown-item:hover{
+        background:#8D0101;
+        color:#FFC107;
+    }
+
+    /* Button */
+
+    .appointment-btn{
+        width:100%;
+        margin-top:15px;
+        justify-content:center;
+    }
+
+    /* Hero */
+
+    .hero-banner{
+        min-height:auto;
+        padding:0 0 90px;
+    }
+
+    .hero-content{
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:44px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+        margin:0 auto 30px;
+    }
+
+}
+
+
+/*=========================================
+TABLET (767.98px)
+=========================================*/
+
+@media (max-width:767.98px){
+
+    .top-bar{
+        display:none;
+    }
+
+    .logo{
+        height:42px;
+    }
+
+    .navbar>.container{
+        padding:10px 15px;
+    }
+
+    .navbar-toggler span{
+        width:25px;
+    }
+
+    .hero-banner{
+        padding:120px 0 80px;
+    }
+
+    .hero-content h6{
+        font-size:15px;
+        letter-spacing:1px;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+        line-height:1.3;
+    }
+
+    .hero-content p{
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .hero-btn{
+        width:100%;
+        max-width:280px;
+    }
+
+    .bg-orb{
+        width:340px;
+        height:340px;
+    }
+
+    .glow-circle{
+        display:none;
+    }
+
+}
+
+
+/*=========================================
+MOBILE (575.98px)
+=========================================*/
+
+@media (max-width:575.98px){
+
+    .navbar>.container{
+        padding:10px 12px;
+    }
+
+    .logo{
+        height:42px;
+    }
+
+    .hero-content h1{
+        font-size:28px;
+    }
+
+    .hero-content p{
+        font-size:14px;
+    }
+
+    .hero-btn{
+        width:100%;
+        padding:15px 24px;
+    }
+    .vac-track,.vac-iconcol,.vac-node{
+        display: none;;
+    }
+.vac-step{
+            grid-template-columns: 0px 1fr !important;
+}
+.service-card_icon img{
+    max-width:248px !important;
+}
+}
