@@ -1,0 +1,284 @@
+
+
+
+/*=====================================
+HERO SECTION
+======================================*/
+
+.hero-section{
+    position:relative;
+    overflow:hidden;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:
+    radial-gradient(circle at 20% 20%,rgba(120,0,0,.22),transparent 35%),
+    radial-gradient(circle at 80% 70%,rgba(212,175,55,.08),transparent 35%),
+    linear-gradient(135deg,#090611 0%,#120814 45%,#05070d 100%);
+    padding:120px 0;
+}
+
+/*============================*/
+
+.hero-bg{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+}
+
+/*============================*/
+
+.orb{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(80px);
+    animation:float 10s ease-in-out infinite;
+}
+
+.orb-1{
+    width:350px;
+    height:350px;
+    background:rgba(122,12,16,.35);
+    left:-120px;
+    top:80px;
+}
+
+.orb-2{
+    width:260px;
+    height:260px;
+    background:rgba(212,175,55,.12);
+    right:5%;
+    top:15%;
+    animation-delay:2s;
+}
+
+.orb-3{
+    width:280px;
+    height:280px;
+    background:rgba(90,40,150,.18);
+    bottom:-80px;
+    left:45%;
+    animation-delay:4s;
+}
+
+/*============================*/
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-40px);
+}
+
+}
+
+/*============================*/
+
+.stars{
+    position:absolute;
+    inset:0;
+    background-image:
+    radial-gradient(#ffffff 1px,transparent 1px),
+    radial-gradient(#ffffff 1px,transparent 1px);
+    background-size:120px 120px,180px 180px;
+    background-position:0 0,60px 60px;
+    opacity:.12;
+    animation:twinkle 8s linear infinite;
+}
+
+@keyframes twinkle{
+
+0%,100%{
+opacity:.08;
+}
+
+50%{
+opacity:.18;
+}
+
+}
+
+/*=====================================
+TAG
+======================================*/
+
+.hero-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:18px;
+    color:#d4af37;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:35px;
+}
+
+.hero-tag span{
+    width:55px;
+    height:1px;
+    background:#d4af37;
+}
+
+/*=====================================
+TITLE
+======================================*/
+
+.hero-title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:76px;
+    font-weight:600;
+    color:#ffffff;
+    line-height:1.15;
+    margin-bottom:30px;
+}
+
+.hero-title span{
+    background:linear-gradient(90deg,#d4af37,#ffffff,#ffb400);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/*=====================================
+SUBTITLE
+======================================*/
+
+.hero-subtitle{
+    max-width:760px;
+    margin:0 auto;
+    color:rgba(255,255,255,.72);
+    font-size:22px;
+    line-height:1.9;
+    margin-bottom:55px;
+    font-style:italic;
+}
+
+/*=====================================
+BUTTONS
+======================================*/
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+/*============================*/
+
+.btn-primary-custom{
+    padding:18px 42px;
+    border-radius:60px;
+    text-decoration:none;
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    background:linear-gradient(135deg,#7a0c10,#d4af37);
+    box-shadow:0 0 35px rgba(122,12,16,.45);
+    transition:.4s;
+}
+
+.btn-primary-custom:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(212,175,55,.35);
+    color:#fff;
+}
+
+/*============================*/
+
+.btn-secondary-custom{
+    padding:18px 42px;
+    border-radius:60px;
+    text-decoration:none;
+    color:#ffffff;
+    border:1px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(12px);
+    transition:.4s;
+}
+
+.btn-secondary-custom:hover{
+    background:#ffffff;
+    color:#111;
+}
+
+/*=====================================
+RATING
+======================================*/
+
+.hero-rating{
+    margin-top:50px;
+    color:#d4af37;
+    font-size:17px;
+}
+
+.hero-rating i{
+    margin:0 2px;
+}
+
+.hero-rating span{
+    margin-left:12px;
+    color:#ddd;
+}
+
+/*=====================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:991px){
+
+.hero-section{
+padding:90px 0;
+}
+
+.hero-title{
+font-size:56px;
+}
+
+.hero-subtitle{
+font-size:18px;
+}
+
+}
+
+@media(max-width:767px){
+
+.hero-title{
+font-size:42px;
+}
+
+.hero-tag{
+letter-spacing:3px;
+font-size:11px;
+}
+
+.hero-tag span{
+width:35px;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.btn-primary-custom,
+.btn-secondary-custom{
+width:100%;
+text-align:center;
+}
+
+.hero-subtitle{
+font-size:16px;
+line-height:1.8;
+}
+
+.hero-rating span{
+display:block;
+margin-top:12px;
+margin-left:0;
+}
+
+}
